@@ -4,8 +4,8 @@ import image from '../img/carre.png'
 export default class About extends React.Component{
     render(){
         return (
-            <section className="about clair">
-                <div className="container">
+            <section id="about" className="about clair py-5">
+                <div className="container pb-5">
                     <div className="row mx-auto w-75 text-center">
                         <div className="col-12">
                             <h2 className="text-white text-center d-flex flex-column">

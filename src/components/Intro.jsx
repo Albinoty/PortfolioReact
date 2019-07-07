@@ -3,7 +3,7 @@ import React from 'react';
 export default class Intro extends React.Component{
     render(){
         return(
-            <section className="intro">
+            <section id="intro" className="intro">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
                         <div className="col-12">

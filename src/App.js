@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import Header from './components/Header';
 import About from './components/About';
 import Skill from './components/Skill';
+import Service from './components/Service';
 
 // Import Fichier js
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
@@ -17,6 +18,7 @@ export default class App extends React.Component{
         <Intro />
         <About />
         <Skill />
+        <Service />
       </div>
     );
   }
