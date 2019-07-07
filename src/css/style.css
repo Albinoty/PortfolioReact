@@ -10569,6 +10569,38 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #232323;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
+h2 .line-titre {
+  text-transform: initial;
+  position: relative;
+  font-size: 20px;
+  color: #ffb32f;
+  padding: 0 50px !important;
+}
+
+h2 .line-titre::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  top: 50%;
+  left: 0;
+  background-color: #ffb32f !important;
+}
+
+h2 .line-titre::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  top: 50%;
+  right: 0;
+  background-color: #ffb32f !important;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -10595,5 +10627,24 @@ canvas {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.about {
+  padding-top: 50px;
+}
+
+.about ul {
+  padding: 0;
+}
+
+.about ul li {
+  padding: 5px 0;
+  color: white;
+  list-style: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.skill {
+  padding-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

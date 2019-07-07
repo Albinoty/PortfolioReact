@@ -1,6 +1,42 @@
+// Fond
 .clair{
     background-color: #2e2e2e;
 }
 .fonce{
     background-color: #232323;
+}
+
+
+// Couleur
+$jaune : #ffb32f;
+
+
+//Style
+h2{
+    text-transform: uppercase;
+    .line-titre{
+        text-transform: initial;
+        position:relative;
+        font-size:20px;
+        color: $jaune;
+        padding: 0 50px !important;
+    }
+    .line-titre::before{
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        top:50%;
+        left:0;
+        background-color: $jaune !important;
+    }
+    .line-titre::after{
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        top:50%;
+        right:0;
+        background-color: $jaune !important;
+    }
 }

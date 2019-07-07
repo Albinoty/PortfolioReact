@@ -2,6 +2,7 @@ import React from 'react';
 import Intro from './components/Intro';
 import Header from './components/Header';
 import About from './components/About';
+import Skill from './components/Skill';
 
 // Import Fichier js
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
@@ -15,6 +16,7 @@ export default class App extends React.Component{
         <Header />
         <Intro />
         <About />
+        <Skill />
       </div>
     );
   }
