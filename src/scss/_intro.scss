@@ -1,0 +1,18 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    h1{
+        z-index: 2;
+    }
+}
+canvas{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url('../img/intro.png') center  no-repeat;
+    background-size: cover;
+    left:0;
+    top:0;
+    z-index:-1;
+}
