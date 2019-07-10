@@ -8,8 +8,8 @@ export default class Skill extends React.Component{
                     <div className="row mx-auto mb-5 w-75 text-center">
                             <div className="col-12">
                                 <h2 className="text-white text-center d-flex flex-column">
-                                    <span className="mx-auto mb-2 line-titre">about</span>
-                                    about myself
+                                    <span className="mx-auto mb-2 line-titre">skill</span>
+                                    Developement Skill
                                 </h2>
                                 <span className="text-white">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus est quos suscipit autem beatae vitae ab ducimus provident similique.

@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(/home/albinot/Documents/Coding School 9/PortfolioReact/node_modules/animate.css/animate.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10573,10 +10574,20 @@ a.text-dark:hover, a.text-dark:focus {
   background: #ffb32f;
 }
 
+.text-bleu {
+  color: #1e283c;
+}
+
 .progress {
   background-color: #5d5d5d;
   border-radius: initial;
   height: 1.45rem;
+}
+
+.form-control {
+  border-radius: initial;
+  border: initial;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .pt-6 {
@@ -10652,5 +10663,65 @@ canvas {
   color: white;
   list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nombre {
+  text-align: right;
+  font-size: 40px;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px white dotted;
+}
+
+.nombre span {
+  position: relative;
+  top: 30px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffb32f;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+.lien {
+  color: white;
+}
+
+.lien:hover {
+  color: #ffb32f;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans-Bold.ttf") format("TrueType");
+}
+
+h2 {
+  font-family: 'Open Sans Bold', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

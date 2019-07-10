@@ -1,6 +1,25 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/animate.css/animate.css';   
 @import './var';
+//import des fichiers de chaque section
 @import './header';
 @import './intro';
 @import './about';
 @import './skill';
+@import './service';
+@import './portfolio';
+@import './contact';
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format("TrueType");
+}
+
+@font-face{
+    font-family: 'Open Sans Bold';
+    src:url('../fonts/OpenSans-Bold.ttf') format("TrueType");
+}
+
+h2{
+    font-family: 'Open Sans Bold', sans-serif;
+}

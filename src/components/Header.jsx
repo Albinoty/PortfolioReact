@@ -1,6 +1,23 @@
 import React from 'react';
 
 export default class Header extends React.Component{
+    
+
+    constructor(props){
+        super(props);
+        this.state={
+            height: 0
+        }
+
+    }
+    
+    taille(){
+       this.setState({
+           height: document.body.scrollHeight
+       })
+       
+    }
+
     render(){
         return(
             <header>
@@ -21,10 +38,20 @@ export default class Header extends React.Component{
                                 <li className="nav-item">
                                     <a className="nav-link text-white" href="#skill">Skill</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a className="nav-link text-white" href="#service">Services</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link text-white" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link text-white" href="#contact">Contact</a>
+                                </li>
                             </ul>
                         </div>  
                     </nav>
                 </div>
+                {console.log(this.state.height)}
             </header>
         );
     }

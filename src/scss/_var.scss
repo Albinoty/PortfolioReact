@@ -10,14 +10,24 @@
 // Couleur
 $jaune : #ffb32f;
 
+$bleu : #1e283c;
+
 .jaune{
     background: #ffb32f;
+}
+.text-bleu{
+    color:#1e283c;
 }
 
 .progress{
     background-color:#5d5d5d;
     border-radius: initial;
     height: 1.45rem;
+}
+.form-control{
+    border-radius: initial;
+    border: initial;
+    border-bottom: 1px solid  rgba(255,255,255,0.5);
 }
 
 // espace

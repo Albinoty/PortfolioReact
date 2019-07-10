@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/'
-
+import { faLaptopCode, faTools} from '@fortawesome/free-solid-svg-icons/';
+import { faAdobe } from '@fortawesome/free-brands-svg-icons/';
 
 
 export default class Service extends React.Component{
@@ -21,22 +21,42 @@ export default class Service extends React.Component{
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-6">
-                            <div className="text-white bg-primary">
-                                <div className="nombre">01</div>
-                                <h3>Web Development</h3>
-                                <div className="img"><FontAwesomeIcon icon={faLaptopCode} size="4x" /></div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus optio sint libero assumenda sed odit maxime est minus omnis deleniti.</p> 
+                        <div className="col-lg-4">
+                            <div className="text-white bg-secondary pt-1">
+                                <div className="nombre">
+                                    <span>01</span>
+                                </div>
+                                <h3 className="text-center text-bleu">Website Development</h3>
+                                <div className="logo">
+                                    <FontAwesomeIcon icon={faLaptopCode} size="3x" />
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, vitae. Quaerat adipisci nobis doloremque, quia quo nesciunt exercitationem tempore nisi.</p>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="text-white">
-                                <div className="nombre">01</div>
-                                <h3>Web Designer</h3>
-                                <div className="img"></div>
-                                <p></p>
+                        <div className="col-lg-4">
+                            <div className="text-white bg-secondary">
+                                <div className="nombre">
+                                    <span>02</span>
+                                </div>
+                                <h3 className="text-center text-bleu">Hardware Repair</h3>
+                                <div className="logo">
+                                    <FontAwesomeIcon icon={faTools} size="3x" />
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, vitae. Quaerat adipisci nobis doloremque, quia quo nesciunt exercitationem tempore nisi.</p>  
                             </div>
                         </div>
+                        <div className="col-lg-4">
+                            <div className="text-white bg-secondary">
+                                <div className="nombre">
+                                    <span>03</span>
+                                </div>
+                                <h3 className="text-center text-bleu"> Logo Creation</h3>
+                                <div className="logo">
+                                    <FontAwesomeIcon icon={faAdobe} size="3x" />
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, vitae. Quaerat adipisci nobis doloremque, quia quo nesciunt exercitationem tempore nisi.</p>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </section>
