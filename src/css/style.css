@@ -4,7 +4,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url(/home/albinot/Documents/Coding School 9/PortfolioReact/node_modules/animate.css/animate.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10652,6 +10651,11 @@ canvas {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.about {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .about ul {

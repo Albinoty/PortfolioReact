@@ -2,25 +2,13 @@ import React from 'react';
 
 export default class Header extends React.Component{
     
-
-    constructor(props){
+    constructor (props) {
         super(props);
-        this.state={
-            height: 0
-        }
-
-    }
-    
-    taille(){
-       this.setState({
-           height: document.body.scrollHeight
-       })
-       
     }
 
     render(){
         return(
-            <header>
+            <header className={this.props.fixed ? 'position-fixed animated fadeInDown fonce' : ''}>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg w-100">
                         <a className="navbar-brand text-white" href="#intro">Albinoty</a>
@@ -51,7 +39,6 @@ export default class Header extends React.Component{
                         </div>  
                     </nav>
                 </div>
-                {console.log(this.state.height)}
             </header>
         );
     }

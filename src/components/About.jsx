@@ -6,8 +6,7 @@ export default class About extends React.Component{
 
     render(){
         return (
-            <section id="about" className="about clair py-5">
-                {this.effet()}
+            <section id="about" className="about clair py-5 animated bounce">
                 <div className="container pb-5">
                     <div className="row mx-auto w-75 text-center">
                         <div className="col-12">

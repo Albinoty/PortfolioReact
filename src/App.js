@@ -8,7 +8,6 @@ import Service from './components/Service';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Effet from './components/Effet';
 
 
 // Import Fichier js
@@ -20,11 +19,27 @@ import '../node_modules/popper.js/dist/popper';
 document.title = "I am Albinot Fetahi";
 
 export default class App extends React.Component{
+  
+  constructor(){
+    super();
+    this.state = {
+      navFixed: false
+    }
+  }
+
+  componentWillMount(){
+    // let a = Scroll;
+    window.addEventListener('scroll', (e) => {
+      window.scrollY > 56 ? this.setState({navFixed: true}) : this.setState({navFixed: false});
+    })
+
+  }
+
+
   render(){
     return (
       <div>
-        <Effet />
-        <Header />
+        <Header fixed={this.state.navFixed} />
         <Intro />
         <About />
         <Skill />
