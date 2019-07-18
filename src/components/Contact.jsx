@@ -1,12 +1,41 @@
 import React from 'react';
-import {} from '@fortawesome/free-solid-svg-icons/';
-import {faFacebook,faInstagram,faTwitter,faSnapchatGhost,faLinkedin} from '@fortawesome/free-brands-svg-icons/';
+import {faFacebook,faInstagram,faTwitter,faSnapchatGhost,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
+import axios from 'axios';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
 
 export default class Contact extends React.Component{
+
+    constructor(){
+        super();
+        this.state = {
+            nom: '',
+            mail: '',
+            sujet: '',
+            msg: ''
+        }
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(e){
+        
+        e.preventDefault();
+        
+        axios({
+            url: '',
+            method: 'post',           
+            // data: {
+            //     nom: this.state.nom,
+            //     mail: this.state.mail,
+            //     sujet: this.state.sujet,
+            //     msg: this.state.msg
+            // }
+        })
+            
+        
+    }
+
     render(){
         return(
             <section id="contact" className="contact py-5 clair">
@@ -23,7 +52,7 @@ export default class Contact extends React.Component{
                         </div>
                     </div>
                     <div className="row mt-5">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 animated slideInLeft">
                             <ul className="text-white">
                                 <li className="mt-3">
                                     <h5 className="font-weight-bold">Email</h5>
@@ -35,7 +64,7 @@ export default class Contact extends React.Component{
                                 </li>
                                 <li className="mt-3">
                                     <h5 className="font-weight-bold">Adress</h5>
-                                    <span className="font-weight-lighter">Brussel 1030,Belgium</span>
+                                    <span className="font-weight-lighter">Brussel 1030, Belgium</span>
                                 </li>
                                 <li className="mt-3">
                                     <h5 className="font-weight-bold">Website</h5>
@@ -47,20 +76,21 @@ export default class Contact extends React.Component{
                                     <a href="https://twitter.com" className="mr-3 lien"><FontAwesomeIcon icon={faTwitter} size="1x" /></a>
                                     <a href="https://www.snapchat.com/" className="mr-3 lien"><FontAwesomeIcon icon={faSnapchatGhost} size="1x" /></a>
                                     <a href="https://fr.linkedin.com/" className="mr-3 lien"><FontAwesomeIcon icon={faLinkedin} size="1x" /></a>
+                                    <a href="https://github.com" className="lien"><FontAwesomeIcon icon={faGithub} size="1x" /></a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-8">
-                            <form action="" method="post">
+                        <div className="col-lg-8 animated slideInRight">
+                            <form action="" method="post" onSubmit={this.handleSubmit}>
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input type="text" className="form-control fonce" placeholder="Your Name"/>
+                                            <input type="text" className="form-control fonce" placeholder="Your Name" onChange={e => (this.setState({nom: e.target.value}))}/>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input type="email" className="form-control fonce" placeholder="Email Address"/>
+                                            <input type="email" className="form-control fonce" placeholder="Email Address" onChange={ e => (this.setState({mail: e.target.value}))}/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">

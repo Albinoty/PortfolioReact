@@ -3,12 +3,18 @@ import image from '../img/carre.png'
 
 export default class About extends React.Component{
 
+    constructor(props){
+        super(props);
+
+        
+    }
+
 
     render(){
         return (
-            <section id="about" className="about clair py-5 animated bounce">
-                <div className="container pb-5">
-                    <div className="row mx-auto w-75 text-center">
+            <section id="about" className="about clair py-5">
+                <div className="container pt-1 pb-5">
+                    <div className={this.props.about ? 'row mx-auto w-75 text-center animated fadeInUp' : 'row mx-auto w-75 text-center'}>
                         <div className="col-12">
                             <h2 className="text-white text-center d-flex flex-column">
                                 <span className="mx-auto mb-2 line-titre">about</span>
@@ -20,7 +26,7 @@ export default class About extends React.Component{
                         </div>
                     </div>
                     <div className="row mt-5 align-items-center">
-                        <div className="col-lg-7 px-5">
+                        <div className={this.props.textPhoto ? 'col-lg-7 px-5 animated slideInLeft' : 'col-lg-7 px-5'}>
                             <p className="text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sint necessitatibus fuga nisi fugiat dolor non ab ex molestias at blanditiis ut, sit eveniet, labore nobis voluptate sequi amet harum explicabo. Veritatis repudiandae cumque natus hic sed dicta dignissimos totam laudantium doloribus, temporibus, eaque earum ipsum, molestiae incidunt quas dolore!
                             </p>
@@ -40,7 +46,7 @@ export default class About extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5">
+                        <div className={ this.props.textPhoto ? 'col-lg-5 animated slideInRight' : 'col-lg-5'}>
                              <img src={image} className="d-block w-100 rounded-circle" alt=""/>
                         </div>
                     </div>

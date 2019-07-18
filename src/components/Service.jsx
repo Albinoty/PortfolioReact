@@ -5,11 +5,24 @@ import { faAdobe } from '@fortawesome/free-brands-svg-icons/';
 
 
 export default class Service extends React.Component{
+    
+    constructor(props){
+        super(props);
+    }
+    
+
+    handleOver(e){
+    
+
+        
+    }
+
+
     render(){
         return(
             <section id="service" className="clair py-5">
-                <div className="container">
-                    <div className="row mx-auto w-75 text-center">
+                <div className="container pt-1">
+                    <div className={this.props.service ? 'row mx-auto w-75 text-center pb-5 animated fadeInUp' : 'row mx-auto w-75 text-center pb-5'}>
                         <div className="col-12">
                             <h2 className="text-white text-center d-flex flex-column">
                                 <span className="mx-auto mb-2 line-titre">services</span>
@@ -20,8 +33,8 @@ export default class Service extends React.Component{
                             </span>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-4">
+                    <div className={this.props.service ? 'row animated fadeInUp delay-1s' : 'row'}>
+                        <div className="col-lg-4" onMouseOver={this.handleOver.bind(this)}>
                             <div className="text-white bg-secondary pt-1">
                                 <div className="nombre">
                                     <span>01</span>
@@ -34,7 +47,7 @@ export default class Service extends React.Component{
                             </div>
                         </div>
                         <div className="col-lg-4">
-                            <div className="text-white bg-secondary">
+                            <div className="text-white bg-secondary" onMouseOver={this.handleOver.bind(this)}>
                                 <div className="nombre">
                                     <span>02</span>
                                 </div>
@@ -45,7 +58,7 @@ export default class Service extends React.Component{
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, vitae. Quaerat adipisci nobis doloremque, quia quo nesciunt exercitationem tempore nisi.</p>  
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4" onMouseOver={this.handleOver.bind(this)}>
                             <div className="text-white bg-secondary">
                                 <div className="nombre">
                                     <span>03</span>

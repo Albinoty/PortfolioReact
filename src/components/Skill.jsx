@@ -1,12 +1,18 @@
 import React from 'react';
 
 export default class Skill extends React.Component{
+
+    constructor(props){
+        super(props);
+    }
+
+
     render(){
         return(
             <section id="skill" className="skill fonce py-5">
-                <div className="container">
-                    <div className="row mx-auto mb-5 w-75 text-center">
-                            <div className="col-12">
+                <div className="container pt-1">
+                    <div className={this.props.skill ? 'row mx-auto mb-5 w-75 text-center animated fadeInUp' : ''}>
+                            <div className="col-lg-12">
                                 <h2 className="text-white text-center d-flex flex-column">
                                     <span className="mx-auto mb-2 line-titre">skill</span>
                                     Developement Skill
@@ -29,7 +35,7 @@ export default class Skill extends React.Component{
                                 <span className="d-block ml-auto">95%</span>
                             </div>
                             <div className="progress mt-2">
-                                <div className="progress-bar jaune" role="progressbar" style={{width: 95 +"%"}} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <div className={this.props.bar ? 'progress-bar jaune animated slideInLeft slow': 'progress-bar jaune'} role="progressbar" style={{width: 95 +"%"}} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                             {/* js,react */}
@@ -38,7 +44,7 @@ export default class Skill extends React.Component{
                                 <span className="d-block ml-auto">80%</span>
                             </div>
                             <div className="progress mt-2">
-                                <div className="progress-bar jaune" role="progressbar" style={{width: 80 +"%"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div className={this.props.bar ? 'progress-bar jaune animated slideInLeft slow' : 'progress-bar jaune'}role="progressbar" style={{width: 80 +"%"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                             {/* Java */}
@@ -47,7 +53,7 @@ export default class Skill extends React.Component{
                                 <span className="d-block ml-auto">55%</span>
                             </div>
                             <div className="progress mt-2">
-                                <div className="progress-bar jaune" role="progressbar" style={{width: 55 +"%"}} aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                <div className={this.props.bar ? 'progress-bar jaune animated slideInLeft slow':'progress-bar jaune'} role="progressbar" style={{width: 55 +"%"}} aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                             {/* php,sql */}
@@ -56,7 +62,7 @@ export default class Skill extends React.Component{
                                 <span className="d-block ml-auto">75%</span>
                             </div>
                             <div className="progress mt-2">
-                                <div className="progress-bar jaune" role="progressbar" style={{width: 75 +"%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div className={this.props.bar ? 'progress-bar jaune animated slideInLeft slow' : 'progress-bar jaune'} role="progressbar" style={{width: 75 +"%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                             {/* photshop, illustrator */}
@@ -65,8 +71,7 @@ export default class Skill extends React.Component{
                                 <span className="d-block ml-auto">70%</span>
                             </div>
                             <div className="progress mt-2">
-                                <div className="progress-bar jaune" role="progressbar" style={{width: 75 +"%"}} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-
+                                <div className={this.props.bar ? 'progress-bar jaune animated slideInLeft slow' : 'progress-bar jaune'} role="progressbar" style={{width: 75 +"%"}} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                             

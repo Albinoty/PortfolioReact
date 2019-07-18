@@ -19,6 +19,10 @@
     src:url('../fonts/OpenSans-Bold.ttf') format("TrueType");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2{
     font-family: 'Open Sans Bold', sans-serif;
 }

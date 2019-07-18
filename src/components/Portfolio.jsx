@@ -5,7 +5,7 @@ export default class Portfolio extends React.Component{
     render(){
         return(
             <section id="portfolio" className="portfolio fonce py-5">
-                <div className="container">
+                <div className="container pt-1">
                     <div className="row mx-auto w-75 text-center">
                             <div className="col-12">
                                 <h2 className="text-white text-center d-flex flex-column">

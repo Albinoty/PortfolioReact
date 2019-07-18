@@ -10628,6 +10628,7 @@ h2 .line-titre::after {
 header {
   width: 100%;
   position: absolute;
+  background-color: rgba(255, 255, 255, 0.05);
   z-index: 10;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -10683,6 +10684,10 @@ canvas {
   top: 30px;
 }
 
+h3 {
+  font-weight: 700;
+}
+
 .logo {
   width: 100px;
   height: 100px;
@@ -10697,10 +10702,6 @@ canvas {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffb32f;
-}
-
-h3 {
-  font-weight: 700;
 }
 
 ul {
@@ -10723,6 +10724,10 @@ ul {
 @font-face {
   font-family: 'Open Sans Bold';
   src: url("../fonts/OpenSans-Bold.ttf") format("TrueType");
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h2 {
