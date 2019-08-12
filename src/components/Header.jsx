@@ -3,15 +3,11 @@ import React from 'react';
 
 export default class Header extends React.Component{
     
-    constructor(props){
-        super(props);
-    }
-
     render(){
         return(
             <header className={this.props.fixed ? 'position-fixed animated fadeInDown fonce' : ''}>
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg w-100">
+                    <nav className="navbar navbar-expand-lg navbar-light w-100">
                         <a className="navbar-brand text-white" href="#intro">Albinoty</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

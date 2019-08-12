@@ -6,6 +6,10 @@
     background-color: #232323;
 }
 
+.bg-secondary{
+    background-color: #757575 !important;
+}
+
 
 // Couleur
 $jaune : #ffb32f;
@@ -17,6 +21,17 @@ $bleu : #1e283c;
 }
 .text-bleu{
     color:#1e283c;
+}
+
+
+
+.btn{
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #1e283c;
 }
 
 .progress{
@@ -63,4 +78,7 @@ h2{
         right:0;
         background-color: $jaune !important;
     }
+}
+body{
+    color: #e1e1e1 !important;
 }

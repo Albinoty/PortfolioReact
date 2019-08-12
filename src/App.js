@@ -33,6 +33,12 @@ export default class App extends React.Component{
       
     }
   }
+
+
+  componentDidMount(e){
+    console.log(e)
+  }
+
   
   componentWillMount(){
     // let a = Scroll;

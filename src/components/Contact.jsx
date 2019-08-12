@@ -2,7 +2,6 @@ import React from 'react';
 import {faFacebook,faInstagram,faTwitter,faSnapchatGhost,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
 
 export default class Contact extends React.Component{
@@ -104,8 +103,8 @@ export default class Contact extends React.Component{
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <button className="btn px-4 py-2 jaune text-uppercase text-white font-weight-bold">
-                                            send message
+                                        <button className="btn px-4 py-2 jaune text-white" disabled>
+                                            coming soon
                                         </button>
                                     </div>
                                 </div>

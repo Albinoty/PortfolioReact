@@ -3,31 +3,24 @@ import image from '../img/carre.png'
 
 export default class About extends React.Component{
 
-    constructor(props){
-        super(props);
-
-        
-    }
-
-
     render(){
         return (
             <section id="about" className="about clair py-5">
-                <div className="container pt-1 pb-5">
+                <div className="container py-4">
                     <div className={this.props.about ? 'row mx-auto w-75 text-center animated fadeInUp' : 'row mx-auto w-75 text-center'}>
                         <div className="col-12">
                             <h2 className="text-white text-center d-flex flex-column">
                                 <span className="mx-auto mb-2 line-titre">about</span>
                                 about myself
                             </h2>
-                            <span className="text-white">
+                            <span className="">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus est quos suscipit autem beatae vitae ab ducimus provident similique.
                             </span>
                         </div>
                     </div>
                     <div className="row mt-5 align-items-center">
                         <div className={this.props.textPhoto ? 'col-lg-7 px-5 animated slideInLeft' : 'col-lg-7 px-5'}>
-                            <p className="text-white">
+                            <p className="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sint necessitatibus fuga nisi fugiat dolor non ab ex molestias at blanditiis ut, sit eveniet, labore nobis voluptate sequi amet harum explicabo. Veritatis repudiandae cumque natus hic sed dicta dignissimos totam laudantium doloribus, temporibus, eaque earum ipsum, molestiae incidunt quas dolore!
                             </p>
                             <div className="row">
