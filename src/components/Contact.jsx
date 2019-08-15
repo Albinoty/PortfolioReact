@@ -1,7 +1,7 @@
 import React from 'react';
 import {faFacebook,faInstagram,faTwitter,faSnapchatGhost,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
+// import axios from 'axios';
 
 
 export default class Contact extends React.Component{
@@ -14,26 +14,26 @@ export default class Contact extends React.Component{
             sujet: '',
             msg: ''
         }
-        this.handleSubmit = this.handleSubmit.bind(this);
+        //this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(e){
+    // handleSubmit(e){
         
-        e.preventDefault();
+    //     e.preventDefault();
         
-        axios({
-            url: '',
-            method: 'post',           
-            // data: {
-            //     nom: this.state.nom,
-            //     mail: this.state.mail,
-            //     sujet: this.state.sujet,
-            //     msg: this.state.msg
-            // }
-        })
+    //     axios({
+    //         url: '',
+    //         method: 'post',           
+    //         // data: {
+    //         //     nom: this.state.nom,
+    //         //     mail: this.state.mail,
+    //         //     sujet: this.state.sujet,
+    //         //     msg: this.state.msg
+    //         // }
+    //     })
             
         
-    }
+    // }
 
     render(){
         return(
@@ -51,7 +51,7 @@ export default class Contact extends React.Component{
                         </div>
                     </div>
                     <div className="row mt-5">
-                        <div className="col-lg-4 animated slideInLeft">
+                        <div className="col-lg-4">
                             <ul className="text-white">
                                 <li className="mt-3">
                                     <h5 className="font-weight-bold">Email</h5>
@@ -74,12 +74,12 @@ export default class Contact extends React.Component{
                                     <a href="https://instagram.com" className="mr-3 lien"><FontAwesomeIcon icon={faInstagram} size="1x" /></a>
                                     <a href="https://twitter.com" className="mr-3 lien"><FontAwesomeIcon icon={faTwitter} size="1x" /></a>
                                     <a href="https://www.snapchat.com/" className="mr-3 lien"><FontAwesomeIcon icon={faSnapchatGhost} size="1x" /></a>
-                                    <a href="https://fr.linkedin.com/" className="mr-3 lien"><FontAwesomeIcon icon={faLinkedin} size="1x" /></a>
-                                    <a href="https://github.com" className="lien"><FontAwesomeIcon icon={faGithub} size="1x" /></a>
+                                    <a href="https://www.linkedin.com/in/albinotfetahi" className="mr-3 lien"><FontAwesomeIcon icon={faLinkedin} size="1x" /></a>
+                                    <a href="https://github.com/Albinoty" className="lien"><FontAwesomeIcon icon={faGithub} size="1x" /></a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-8 animated slideInRight">
+                        <div className="col-lg-8">
                             <form action="" method="post" onSubmit={this.handleSubmit}>
                                 <div className="row">
                                     <div className="col-lg-6">

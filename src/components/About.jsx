@@ -1,13 +1,23 @@
 import React from 'react';
-import image from '../img/carre.png'
+import image from '../img/carre2.png'
 
 export default class About extends React.Component{
+
+
+    componentWillMount(){
+        window.addEventListener('scroll', () => {
+            console.log(window.scrollY);
+            // Navbar
+            window.scrollY > 56 ? this.setState({navFixed: true}) : this.setState({navFixed: false});
+        })
+    }
+
 
     render(){
         return (
             <section id="about" className="about clair py-5">
                 <div className="container py-4">
-                    <div className={this.props.about ? 'row mx-auto w-75 text-center animated fadeInUp' : 'row mx-auto w-75 text-center'}>
+                    <div className="row mx-auto w-75 text-center">
                         <div className="col-12">
                             <h2 className="text-white text-center d-flex flex-column">
                                 <span className="mx-auto mb-2 line-titre">about</span>

@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../img/intro.png';
+// import photo from '../img/intro.png';
 
 export default class Portfolio extends React.Component{
     render(){
@@ -17,7 +17,7 @@ export default class Portfolio extends React.Component{
                                 </span>
                             </div>
                     </div>
-                    <div className="row mt-5">
+                    {/* <div className="row mt-5">
                         <div className="col-12 text-center">
                             <button className="btn text-white mx-2">1</button>
                             <button className="btn text-white mx-2">2</button>
@@ -35,7 +35,7 @@ export default class Portfolio extends React.Component{
                         <div className="col-lg-4 mb-5">
                             <img src={photo} alt="" className="d-block w-100" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>  
             </section>
         );

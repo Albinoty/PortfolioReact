@@ -10581,6 +10581,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1e283c;
 }
 
+.text-jaune {
+  color: #ffb32f !important;
+}
+
 .btn {
   border-radius: 0;
   text-transform: uppercase;
