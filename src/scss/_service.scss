@@ -1,25 +1,41 @@
-.nombre{
-    text-align: right;
-    font-size:40px;
-    margin-left: auto;
-    position: relative;
-    overflow: hidden;
-    border-bottom: 1px white dotted;
-    span{
+.service{
+    .nombre{
+        text-align: right;
+        font-size:40px;
+        margin-left: auto;
         position: relative;
-        top:30px;
+        overflow: hidden;
+        border-bottom: 1px white dotted;
+        span{
+            position: relative;
+            top:30px;
+            right:10px;
+            font-weight: bold;
+            transition: top 400ms;
+        }
+    }
+
+    h3{font-weight: 700;}
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $jaune;
+        transition: transform 600ms;
     }
 }
 
-h3{font-weight: 700;}
-
-.logo{
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $jaune;
+.service:hover{
+    .nombre{
+       span{
+           top: 0px;
+       }
+    }
+    .logo{
+        transform: rotateY(180deg);
+    }
 }
-

@@ -10722,7 +10722,7 @@ canvas {
   text-transform: uppercase;
 }
 
-.nombre {
+.service .nombre {
   text-align: right;
   font-size: 40px;
   margin-left: auto;
@@ -10731,16 +10731,20 @@ canvas {
   border-bottom: 1px white dotted;
 }
 
-.nombre span {
+.service .nombre span {
   position: relative;
   top: 30px;
+  right: 10px;
+  font-weight: bold;
+  -webkit-transition: top 400ms;
+  transition: top 400ms;
 }
 
-h3 {
+.service h3 {
   font-weight: 700;
 }
 
-.logo {
+.service .logo {
   width: 100px;
   height: 100px;
   margin: 20px auto;
@@ -10754,6 +10758,19 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffb32f;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+
+.service:hover .nombre span {
+  top: 0px;
+}
+
+.service:hover .logo {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 ul {
@@ -10780,6 +10797,10 @@ ul {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {

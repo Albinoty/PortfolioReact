@@ -14,9 +14,6 @@ export default class Skill extends React.Component{
         let cible, effet;
 
         window.addEventListener('scroll', () => {
-            console.log(window.scrollY);
-            console.log(cible)
-
             if(window.scrollY >= 925 && window.scrollY < 1025){
                 cible = document.getElementById('titreSkill');
                 effet = "fadeInDown";
@@ -99,7 +96,7 @@ export default class Skill extends React.Component{
                                 <span className="d-block ml-auto span">70%</span>
                             </div>
                             <div className="progress mt-2">
-                                <div className={this.state.bar ? 'progress-bar jaune animated slideInLeft slow' : 'progress-bar jaune'} role="progressbar" style={{width: 75 +"%"}} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div className={this.state.bar ? 'progress-bar jaune animated slideInLeft slow' : 'progress-bar jaune'} role="progressbar" style={{width: 70 +"%"}} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                             
