@@ -110,8 +110,8 @@ export default class Contact extends React.Component{
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <button className="btn px-4 py-2 jaune text-white" onClick={this.handleSubmit}>
-                                            submit
+                                        <button className="btn px-4 py-2 jaune text-white" onClick={this.handleSubmit} disabled>
+                                            coming soon
                                         </button>
                                     </div>
                                 </div>
