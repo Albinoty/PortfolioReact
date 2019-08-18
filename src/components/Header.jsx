@@ -15,8 +15,6 @@ export default class Header extends React.Component{
         }
     }
 
-
-
     componentWillMount(){
         // let a = Scroll;
         window.addEventListener('scroll', () => {
@@ -56,6 +54,17 @@ export default class Header extends React.Component{
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link text-white" href="#contact">Contact</a>
+                                </li>
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Other Link
+                                    </a>
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a className="dropdown-item" href="https://albinoty.com/codingweek">CodingWeek</a>
+                                        <a className="dropdown-item" href="https://albinoty.com/jeu">Shifumi</a>
+                                        <a className="dropdown-item" href="https://albinoty.com/twitch">Twitch</a>
+                                        <a className="dropdown-item" href="https://albinoty.com/docs/lexique.html">Lexique</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>  

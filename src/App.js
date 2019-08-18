@@ -17,7 +17,7 @@ import '../node_modules/popper.js/dist/popper';
 
 //Pour change la meta pour le titre de la page
 document.title = "I am Albinot Fetahi";
-document.description = "Portfolio Web Developer - by Albinot Fetahi";
+document.description = "Web Developer Portfolio - by Albinot Fetahi";
 
 
 export default class App extends React.Component{
