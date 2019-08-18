@@ -48,6 +48,11 @@ $bleu : #1e283c;
     border-bottom: 1px solid  rgba(255,255,255,0.5);
 }
 
+.dropdown-item:active{
+    background-color: #fff;
+}
+
+
 // espace
 .pt-6{
     padding-top:50px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {faFacebook,faInstagram,faTwitter,faSnapchatGhost,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import axios from 'axios';
+import axios from 'axios';
 
 
 export default class Contact extends React.Component{
@@ -14,26 +14,33 @@ export default class Contact extends React.Component{
             sujet: '',
             msg: ''
         }
-        //this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    // handleSubmit(e){
+    handleSubmit(e){
         
-    //     e.preventDefault();
+        e.preventDefault();
         
-    //     axios({
-    //         url: '',
-    //         method: 'post',           
-    //         // data: {
-    //         //     nom: this.state.nom,
-    //         //     mail: this.state.mail,
-    //         //     sujet: this.state.sujet,
-    //         //     msg: this.state.msg
-    //         // }
-    //     })
+        console.log(this.state)
+
+        const donnees = {
+            nom: this.state.nom,
+            mail: this.state.mail,
+            sujet: this.state.sujet,
+            msg: this.state.msg
+        }
+
+
+        axios.post({
+            method: 'post',
+            url: '/',
+            data: donnees,
+            config: {headers: {'Content-type':'multipart/form-data'}}
+
+        })
             
         
-    // }
+    }
 
     render(){
         return(
@@ -52,7 +59,7 @@ export default class Contact extends React.Component{
                     </div>
                     <div className="row mt-5">
                         <div className="col-lg-4">
-                            <ul className="text-white">
+                            <ul className="text-white pl-0">
                                 <li className="mt-3">
                                     <h5 className="font-weight-bold">Email</h5>
                                     <span className="font-weight-lighter">info@albinoty.com</span>
@@ -94,17 +101,17 @@ export default class Contact extends React.Component{
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input type="text" className="form-control fonce" placeholder="Subject"/>  
+                                            <input type="text" className="form-control fonce" placeholder="Subject" onChange={ e => (this.setState({sujet: e.target.value}))} />  
                                         </div>
                                     </div>    
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <textarea name="" id="" className="form-control fonce" placeholder="Your message" cols="30" rows="10"></textarea>
+                                            <textarea name="" id="" className="form-control fonce" placeholder="Your message" cols="30" rows="10" onChange={e => (this.setState({msg: e.target.value}))} ></textarea>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <button className="btn px-4 py-2 jaune text-white" disabled>
-                                            coming soon
+                                        <button className="btn px-4 py-2 jaune text-white" onClick={this.handleSubmit}>
+                                            submit
                                         </button>
                                     </div>
                                 </div>

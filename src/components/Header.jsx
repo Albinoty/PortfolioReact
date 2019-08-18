@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default class Header extends React.Component{
     
     constructor(){
@@ -16,7 +15,6 @@ export default class Header extends React.Component{
     }
 
     componentWillMount(){
-        // let a = Scroll;
         window.addEventListener('scroll', () => {
             (window.scrollY >= 57 && window.scrollY < 935) ? this.setState({home: true}) : this.setState({home: false});
             (window.scrollY >= 936 && window.scrollY < 1698) ? this.setState({about: true}) : this.setState({about: false});
@@ -24,7 +22,7 @@ export default class Header extends React.Component{
             (window.scrollY >= 2357 && window.scrollY < 3128) ? this.setState({services: true}) : this.setState({services: false});
             (window.scrollY >= 3129) ? this.setState({portfolio: true}) : this.setState({portfolio: false});
         })
-      }
+    }
 
     render(){
         return(
