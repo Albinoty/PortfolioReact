@@ -3,39 +3,24 @@ import image from '../img/carre2.png'
 
 export default class About extends React.Component{
 
-    constructor(){
-        super();
-        this.state =  {
-            titre: false,
-            texte: false,
-            photo: false
-        }
-    }
-
     componentWillMount(){
 
         let cible, effet;
 
         window.addEventListener('scroll', () => {
-            console.log(window.scrollY);
-            console.log(cible)
-
             if(window.scrollY >= 200 && window.scrollY < 500){
-                this.setState({titre: true})
-                cible = document.getElementById('titre');
+                cible = document.getElementById('titreAbout');
                 effet = "fadeInDown";
                 cible.classList.add(effet);
             }
             else if ( window.scrollY >= 501 && window.scrollY < 900){
-                this.setState({texte: true})
-                cible = document.getElementById('texte');
+                cible = document.getElementById('texteAbout');
                 effet = "slideInLeft";
                 cible.classList.add(effet);
-                cible = document.getElementById('photo');
+                cible = document.getElementById('photoAbout');
                 effet = "slideInRight";
                 cible.classList.add(effet);
-            }                
-       
+            }   
         })
     }
 
@@ -43,7 +28,7 @@ export default class About extends React.Component{
         return (
             <section id="about" className="about clair py-5">
                 <div className="container py-4">
-                    <div className="row mx-auto w-75 text-center animated slower" id="titre">
+                    <div className="row mx-auto w-75 text-center animated slower" id="titreAbout">
                         <div className="col-12">
                             <h2 className="text-white text-center d-flex flex-column">
                                 <span className="mx-auto mb-2 line-titre">about</span>
@@ -55,7 +40,7 @@ export default class About extends React.Component{
                         </div>
                     </div>
                     <div className="row mt-5 align-items-center">
-                        <div className="col-lg-7 px-5 animated" id="texte">
+                        <div className="col-lg-7 px-5 animated" id="texteAbout">
                             <p className="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sint necessitatibus fuga nisi fugiat dolor non ab ex molestias at blanditiis ut, sit eveniet, labore nobis voluptate sequi amet harum explicabo. Veritatis repudiandae cumque natus hic sed dicta dignissimos totam laudantium doloribus, temporibus, eaque earum ipsum, molestiae incidunt quas dolore!
                             </p>
@@ -75,7 +60,7 @@ export default class About extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 animated" id="photo">
+                        <div className="col-lg-5 animated" id="photoAbout">
                             <img src={image} className="d-block w-100 rounded-circle" alt=""/>
                         </div>
                     </div>
