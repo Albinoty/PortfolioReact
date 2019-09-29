@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../img/logo_site.png';
 
 export default class Header extends React.Component{
     
@@ -20,7 +21,8 @@ export default class Header extends React.Component{
             (window.scrollY >= 936 && window.scrollY < 1698) ? this.setState({about: true}) : this.setState({about: false});
             (window.scrollY >= 1699 && window.scrollY < 2356) ? this.setState({skill: true}) : this.setState({skill: false});
             (window.scrollY >= 2357 && window.scrollY < 3128) ? this.setState({services: true}) : this.setState({services: false});
-            (window.scrollY >= 3129) ? this.setState({portfolio: true}) : this.setState({portfolio: false});
+            (window.scrollY >= 3129 && window.scrollY < 3580) ? this.setState({portfolio: true}) : this.setState({portfolio: false});
+            (window.scrollY >= 3581) ? this.setState({contact: true}) : this.setState({contact: false});
         })
     }
 
@@ -28,10 +30,12 @@ export default class Header extends React.Component{
         return(
             <header className={this.props.fixed ? 'position-fixed animated fadeInDown fonce' : ''}>
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg navbar-light w-100">
-                        <a className="navbar-brand text-white" href="#intro">Albinoty</a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                    <nav className="navbar navbar-expand-lg navbar-light px-0 w-100">
+                        <a className="navbar-brand text-white mr-0" href="#intro">
+                            <img src={logo} alt="" className="d-block img-fluid" />
+                        </a>
+                        <button className="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon text-white"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ml-auto">
@@ -51,7 +55,7 @@ export default class Header extends React.Component{
                                     { this.state.portfolio ? <a className="nav-link text-jaune active" href="#portfolio">Portfolio</a> : <a className="nav-link text-white" href="#portfolio">Portfolio</a> }
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-white" href="#contact">Contact</a>
+                                { this.state.contact ? <a className="nav-link text-jaune active" href="#contact">Contact</a> : <a className="nav-link text-white" href="#contact">Contact</a> }
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

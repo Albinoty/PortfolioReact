@@ -36,13 +36,13 @@ export default class Skill extends React.Component{
         return(
             <section id="skill" className="skill fonce py-5">
                 <div className="container py-4">
-                    <div className="row mx-auto mb-5 w-75 text-center animated " id="titreSkill">
+                    <div className="row mx-auto mb-5 w-100 text-center animated " id="titreSkill">
                             <div className="col-lg-12">
                                 <h2 className="text-white text-center d-flex flex-column">
                                     <span className="mx-auto mb-2 line-titre">skill</span>
                                     Developement Skill
                                 </h2>
-                                <span className="">
+                                <span className="d-block mx-auto w-75">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus est quos suscipit autem beatae vitae ab ducimus provident similique.
                                 </span>
                             </div>

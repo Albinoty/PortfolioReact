@@ -83,7 +83,7 @@ export default class Portfolio extends React.Component{
                             </a>
                         </div>
                         <div className={this.state.html ? "col-lg-3 mb-5" : "col-lg-3 mb-5 d-none"}>
-                            <a href="https://albinoty.com/portfolio/siteduchef">
+                            <a href="https://albinoty.com/portfolio/codingweek">
                                 <img src={codingWeek} alt="Coding Week 2019" title="Coding Week 2019" className="d-block w-100" />
                             </a>
                         </div>

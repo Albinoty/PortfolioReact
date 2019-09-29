@@ -77,10 +77,10 @@ export default class Contact extends React.Component{
                                     <span className="font-weight-lighter">www.albinoty.com</span>
                                 </li>
                                 <li className="mt-3">
-                                    <a href="https://facebook.com" className="mr-3 lien"><FontAwesomeIcon icon={faFacebook} size="1x" /></a>
-                                    <a href="https://instagram.com" className="mr-3 lien"><FontAwesomeIcon icon={faInstagram} size="1x" /></a>
+                                    <a href="https://facebook.com/A.Noty0Kumanova" className="mr-3 lien"><FontAwesomeIcon icon={faFacebook} size="1x" /></a>
+                                    <a href="https://instagram.com/albinotknoty/" className="mr-3 lien"><FontAwesomeIcon icon={faInstagram} size="1x" /></a>
                                     <a href="https://twitter.com" className="mr-3 lien"><FontAwesomeIcon icon={faTwitter} size="1x" /></a>
-                                    <a href="https://www.snapchat.com/" className="mr-3 lien"><FontAwesomeIcon icon={faSnapchatGhost} size="1x" /></a>
+                                    <a href="https://www.snapchat.com/add/albinotknoty" className="mr-3 lien"><FontAwesomeIcon icon={faSnapchatGhost} size="1x" /></a>
                                     <a href="https://www.linkedin.com/in/albinotfetahi" className="mr-3 lien"><FontAwesomeIcon icon={faLinkedin} size="1x" /></a>
                                     <a href="https://github.com/Albinoty" className="lien"><FontAwesomeIcon icon={faGithub} size="1x" /></a>
                                 </li>
