@@ -28,7 +28,7 @@ export default class Header extends React.Component{
 
     render(){
         return(
-            <header className={this.props.fixed ? 'position-fixed animated fadeInDown fonce' : ''}>
+            <header className={(this.props.fixed && window.innerWidth>990)  ? 'position-fixed animated fadeInDown fonce' : 'position-fixed fonce'}>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light px-0 w-100">
                         <a className="navbar-brand text-white mr-0" href="#intro">

@@ -25,18 +25,16 @@ export default class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      navFixed: false
+      navFixed: false,
     }
   }
 
   componentWillMount(){
     // let a = Scroll;
     window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
       // Navbar
       window.scrollY > 56 ? this.setState({navFixed: true}) : this.setState({navFixed: false});
     })
-    
   }
   
   render(){
