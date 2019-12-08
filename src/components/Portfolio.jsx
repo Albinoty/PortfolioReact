@@ -14,7 +14,7 @@ export default class Portfolio extends React.Component{
         }
     }
 
-    componentWillMount(){
+    UNSAGE_componentWillMount(){
 
         let cible, effet;
 

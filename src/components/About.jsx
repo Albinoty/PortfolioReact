@@ -3,7 +3,7 @@ import image from '../img/carre2.png'
 
 export default class About extends React.Component{
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
 
         let cible, effet;
 

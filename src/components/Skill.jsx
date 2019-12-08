@@ -9,7 +9,7 @@ export default class Skill extends React.Component{
         }
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
 
         let cible, effet;
 

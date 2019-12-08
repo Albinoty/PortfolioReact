@@ -6,7 +6,7 @@ import { faAdobe } from '@fortawesome/free-brands-svg-icons/';
 
 export default class Service extends React.Component{
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
 
         let cible, effet;
 

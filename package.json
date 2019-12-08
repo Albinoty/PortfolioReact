@@ -19,7 +19,8 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.10.1",
     "react-router-dom": "^5.1.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "typeit": "^6.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

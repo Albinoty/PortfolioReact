@@ -11,11 +11,12 @@ export default class Header extends React.Component{
             skill: false,
             services: false,
             portfolio: false,
-            contact: false
+            contact: false,
+            click: false
         }
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         window.addEventListener('scroll', () => {
             (window.scrollY >= 57 && window.scrollY < 935) ? this.setState({home: true}) : this.setState({home: false});
             (window.scrollY >= 936 && window.scrollY < 1698) ? this.setState({about: true}) : this.setState({about: false});
@@ -26,15 +27,30 @@ export default class Header extends React.Component{
         })
     }
 
+    isMobile(){
+        
+        if(!this.state.click && window.scrollY < 56){
+            document.getElementsByTagName('header')[0].setAttribute('class','fonce')
+            this.setState({click: true})
+        }
+        else if(this.state.click  && window.scrollY < 56){
+            setTimeout(() => {
+                document.getElementsByTagName('header')[0].setAttribute('class','')
+            }, 340);
+            this.setState({click: false})
+        }
+        
+    }
+
     render(){
         return(
-            <header className={(this.props.fixed && window.innerWidth>990)  ? 'position-fixed animated fadeInDown fonce' : 'position-fixed fonce'}>
+            <header className={(this.props.fixed)  ? 'position-fixed animated fadeInDown fonce' : ''}>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light px-0 w-100">
                         <a className="navbar-brand text-white mr-0" href="#intro">
                             <img src={logo} alt="" className="d-block img-fluid" />
                         </a>
-                        <button className="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler text-white" onClick={this.isMobile.bind(this)} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon text-white"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">

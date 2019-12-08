@@ -91,22 +91,22 @@ export default class Contact extends React.Component{
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input type="text" className="form-control fonce" placeholder="Your Name" onChange={e => (this.setState({nom: e.target.value}))}/>
+                                            <input type="text" className="form-control clair" placeholder="Your Name" onChange={e => (this.setState({nom: e.target.value}))}/>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input type="email" className="form-control fonce" placeholder="Email Address" onChange={ e => (this.setState({mail: e.target.value}))}/>
+                                            <input type="email" className="form-control clair" placeholder="Email Address" onChange={ e => (this.setState({mail: e.target.value}))}/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input type="text" className="form-control fonce" placeholder="Subject" onChange={ e => (this.setState({sujet: e.target.value}))} />  
+                                            <input type="text" className="form-control clair" placeholder="Subject" onChange={ e => (this.setState({sujet: e.target.value}))} />  
                                         </div>
-                                    </div>    
+                                    </div>     
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <textarea name="" id="" className="form-control fonce" placeholder="Your message" cols="30" rows="10" onChange={e => (this.setState({msg: e.target.value}))} ></textarea>
+                                            <textarea name="" id="" className="form-control clair" placeholder="Your message" cols="30" rows="10" onChange={e => (this.setState({msg: e.target.value}))} ></textarea>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">

@@ -9,11 +9,11 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-
 // Import Fichier js
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import '../node_modules/jquery/dist/jquery';
 import '../node_modules/popper.js/dist/popper';
+import '../node_modules/typeit/dist/typeit.min.js';
 
 //Pour change la meta pour le titre de la page
 document.title = "I am Albinot Fetahi";
@@ -29,7 +29,7 @@ export default class App extends React.Component{
     }
   }
 
-  componentWillMount(){
+  UNSAFE_componentWillMount(){
     // let a = Scroll;
     window.addEventListener('scroll', () => {
       // Navbar
