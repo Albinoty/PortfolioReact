@@ -26,6 +26,7 @@ export default class App extends React.Component{
     super();
     this.state = {
       navFixed: false,
+      page: false
     }
   }
 
@@ -36,10 +37,23 @@ export default class App extends React.Component{
       window.scrollY > 56 ? this.setState({navFixed: true}) : this.setState({navFixed: false});
     })
   }
+
+  componentDidMount(){
+
+    setTimeout(() => {
+      this.setState({page: true});
+    }, 2500);
+    
+  }
   
   render(){
     return (
-      <div>
+      <div className={this.state.page === true ? "loaded" : ""}>
+        <div id="loader-wrapper">
+          <div id="loader"></div>
+          <div className="loader-section section-left"></div>
+          <div className="loader-section section-right"></div>
+        </div>
         <Header fixed={this.state.navFixed} />
         <Intro />
         <About />
