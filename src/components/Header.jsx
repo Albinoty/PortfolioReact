@@ -78,10 +78,8 @@ export default class Header extends React.Component{
                                     Other Link
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="https://albinoty.com/portfolio/codingweek">CodingWeek</a>
-                                        <a className="dropdown-item" href="https://albinoty.com/jeu">Shifumi</a>
-                                        <a className="dropdown-item" href="https://albinoty.com/twitch">Twitch</a>
-                                        <a className="dropdown-item" href="https://albinoty.com/docs/lexique.html">Lexique</a>
+                                        <a className="dropdown-item" href="https://www.albinoty.com/portfolio/codingweek">CodingWeek</a>
+                                        <a className="dropdown-item" href="https://www.albinoty.com/docs/lexique.html">Lexique</a>
                                     </div>
                                 </li>
                             </ul>
