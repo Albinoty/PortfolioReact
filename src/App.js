@@ -15,6 +15,11 @@ import '../node_modules/jquery/dist/jquery';
 import '../node_modules/popper.js/dist/popper';
 import '../node_modules/typeit/dist/typeit.min.js';
 
+//Loader
+import left from './img/loader/left.svg';
+import right from './img/loader/right.svg';
+import middle from './img/loader/middle.svg';
+
 //Pour change la meta pour le titre de la page
 document.title = "I am Albinot Fetahi";
 document.description = "Web Developer Portfolio - by Albinot Fetahi";
@@ -50,7 +55,11 @@ export default class App extends React.Component{
     return (
       <div className={this.state.page === true ? "loaded" : ""}>
         <div id="loader-wrapper">
-          <div id="loader"></div>
+          <div id="loader">
+            <img src={left} className="animated fadeInLeft slow" />
+            <img src={middle} className="animated fadeInUp slow" />
+            <img src={right} className="animated fadeInRight slow" />
+          </div>
           <div className="loader-section section-left"></div>
           <div className="loader-section section-right"></div>
         </div>
