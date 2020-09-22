@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../img/logo_site.png';
+// import logo from '../img/logo_site.png';
+import logo from '../img/logo.png';
 
 export default class Header extends React.Component{
     
@@ -47,8 +48,8 @@ export default class Header extends React.Component{
             <header className={(this.props.fixed)  ? 'position-fixed animated fadeInDown fonce' : ''}>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light px-0 w-100">
-                        <a className="navbar-brand text-white mr-0" href="#intro">
-                            <img src={logo} alt="" className="d-block img-fluid" />
+                        <a className="navbar-brand text-white mr-0 w-75 pl-2" href="#intro">
+                            <img src={logo} alt="" className="d-block w-25" />
                         </a>
                         <button className="navbar-toggler text-white" onClick={this.isMobile.bind(this)} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon text-white"></span>
