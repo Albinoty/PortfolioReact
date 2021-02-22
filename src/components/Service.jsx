@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faTools} from '@fortawesome/free-solid-svg-icons/';
-import { faAdobe } from '@fortawesome/free-brands-svg-icons/';
+import { faLaptopCode, faTools, faGlobeEurope} from '@fortawesome/free-solid-svg-icons/';
 
 
 export default class Service extends React.Component{
@@ -69,9 +68,9 @@ export default class Service extends React.Component{
                                 <div className="nombre">
                                     <span>03.</span>
                                 </div>
-                                <h3 className="text-center text-bleu py-4"> Logo Creation</h3>
+                                <h3 className="text-center text-bleu py-4">Deploy Website</h3>
                                 <div className="logo">
-                                    <FontAwesomeIcon icon={faAdobe} size="3x" />
+                                    <FontAwesomeIcon icon={faGlobeEurope} size="3x" />
                                 </div>
                                 <p className="px-5 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, vitae. Quaerat adipisci nobis doloremque, quia quo nesciunt exercitationem tempore nisi.</p>
                             </div>

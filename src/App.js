@@ -56,9 +56,9 @@ export default class App extends React.Component{
       <div className={this.state.page === true ? "loaded" : ""}>
         <div id="loader-wrapper">
           <div id="loader">
-            <img src={left} className="animated fadeInLeft slow" />
-            <img src={middle} className="animated fadeInUp slow" />
-            <img src={right} className="animated fadeInRight slow" />
+            <img src={left} className="animated fadeInLeft slow w-25" />
+            <img src={middle} className="animated fadeInUp slow w-25" />
+            <img src={right} className="animated fadeInRight slow w-25" />
           </div>
           <div className="loader-section section-left"></div>
           <div className="loader-section section-right"></div>

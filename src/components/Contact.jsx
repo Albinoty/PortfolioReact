@@ -12,7 +12,7 @@ export default class Contact extends React.Component{
             sujet: '',
             msg: ''
         }
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
 

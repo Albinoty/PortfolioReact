@@ -4,7 +4,7 @@ import TypeIt from 'typeit';
 export default class Intro extends React.Component{
     componentDidMount(){
         new TypeIt('#dev',{
-            strings: ["Front-end Developer","Back-end Developer","Coach at MolenGeek"],
+            strings: ["Front-end Developer","Back-end Developer","Full-Stack Web Developer"],
             breakLines: false,
             speed: 150,
             deleteSpeed:150,
