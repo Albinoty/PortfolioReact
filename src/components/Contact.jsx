@@ -1,8 +1,6 @@
 import React from 'react';
 import {faFacebook,faInstagram,faTwitter,faSnapchatGhost,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
-
 
 export default class Contact extends React.Component{
 
@@ -17,30 +15,6 @@ export default class Contact extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(e){
-        
-        e.preventDefault();
-        
-        console.log(this.state)
-
-        const donnees = {
-            nom: this.state.nom,
-            mail: this.state.mail,
-            sujet: this.state.sujet,
-            msg: this.state.msg
-        }
-
-
-        axios.post({
-            method: 'post',
-            url: '/',
-            data: donnees,
-            config: {headers: {'Content-type':'multipart/form-data'}}
-
-        })
-            
-        
-    }
 
     render(){
         return(
@@ -87,7 +61,7 @@ export default class Contact extends React.Component{
                             </ul>
                         </div>
                         <div className="col-lg-8">
-                            <form action="" method="post" onSubmit={this.handleSubmit}>
+                            <form action="" method="post" >
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="form-group">

@@ -4,22 +4,21 @@
   "private": true,
   "homepage": "https://albinoty.com/",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "l": "^0.6.0",
     "popper.js": "^1.16.1",
     "r": "0.0.5",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^4.0.3",
     "typeit": "^6.5.1"
   },
   "scripts": {
@@ -44,6 +43,6 @@
     ]
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0"
+    "@fortawesome/fontawesome-free": "^5.15.2"
   }
 }
